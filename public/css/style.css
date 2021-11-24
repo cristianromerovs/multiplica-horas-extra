@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #fff;
+    position: relative;
+}
+
+p {
+    margin: 0px;
+}
+
+.multiplica-logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+section.main .my-form {
+    margin-top: 30vh;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 6.4px 32px rgb(0 0 0 / 18%);
+}
+
+section.main .my-form input[type=number]{
+    height: 40px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    -moz-appearance: textfield;
+    color: rgb(38, 38, 38);
+    padding-left: 15px;
+}
+
+section.main .my-form .btn-red{
+    height: 50px;
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    background-color: rgb(235, 73, 56 );
+    font-weight: 500;
+    font-size: auto;
+}
+
+section.main .my-form input[type=number]:focus{
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+section.main .my-form .main__text {
+    color: rgb(38, 38, 38);
+    font-size: 17px;
+}
+
+/* 235, 73, 56 */
