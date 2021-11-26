@@ -17,10 +17,31 @@ p {
 }
 
 section.main .my-form {
-    margin-top: 30vh;
+    width: auto;
+    height: 300px;
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0px 6.4px 32px rgb(0 0 0 / 18%);
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+section.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+section.main .show-data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section.main .my-form input[type=number]{
@@ -54,7 +75,62 @@ input::-webkit-inner-spin-button {
 
 section.main .my-form .main__text {
     color: rgb(38, 38, 38);
-    font-size: 17px;
+    font-size: 19px;
 }
 
-/* 235, 73, 56 */
+section.main .show-data .btn-copy {
+    background-color: #fff;
+    border: none;
+    height: 40px;
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+
+section.main .show-data .btn-red {
+    height: 50px;
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    background-color: rgb(235, 73, 56 );
+    font-weight: 500;
+    font-size: auto;
+    width: 150px;
+}
+
+section.main .show-data .btn-grey {
+    height: 50px;
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    background-color: rgb(38, 38, 38 );
+    font-weight: 500;
+    font-size: auto;
+    width: 150px;
+}
+section.main .show-data .clipboard-input {
+    border: none;
+    color: rgb(38, 38, 38 );
+    font-size: 20px;
+    width: 40%;
+    height: 50px;
+}
+
+section.main .show-data .show__text {
+    color: rgb(38, 38, 38);
+    font-size: 20px;
+    width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    section.main .show-data .btn-grey,
+    section.main .show-data .btn-red {
+        width: 170px;
+    }
+    section.main .show-data .show__text {
+        width: 50%;
+    }
+    section.main .show-data .clipboard-input {
+        width: 50%;
+    }
+
+}
